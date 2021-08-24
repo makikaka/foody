@@ -1,7 +1,7 @@
 package com.example.foody.viewmodels
 
+import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import com.example.foody.MyApplication
 import com.example.foody.util.Constants.Companion.API_KEY
 import com.example.foody.util.Constants.Companion.QUERY_ADD_RECIPES_INFORMATION
 import com.example.foody.util.Constants.Companion.QUERY_API_KEY
@@ -10,7 +10,7 @@ import com.example.foody.util.Constants.Companion.QUERY_FILL_INGREDIENTS
 import com.example.foody.util.Constants.Companion.QUERY_NUMBER
 import com.example.foody.util.Constants.Companion.QUERY_TYPE
 
-class RecipesViewModel(application: MyApplication): AndroidViewModel(application) {
+class RecipesViewModel(application: Application): AndroidViewModel(application) {
 
 
     fun applyQueries(): HashMap<String, String> {
